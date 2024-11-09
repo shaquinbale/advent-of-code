@@ -36,9 +36,10 @@ def part_one(num)
   # Calculate distance to the next center
   closest = centers.min_by { |x| (x - num).abs }
   distance = (closest - num).abs
-  
+
   puts "answer is #{distance + layer}"  
 end
 
 puts part_one(347991)
 
+# part 2 https://oeis.org/A141481/b141481.txt
